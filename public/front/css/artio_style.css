@@ -1,0 +1,265 @@
+/*-------------------------------------------------*\
+    Theme Name  : ARTIO
+    Description : One Page Tour & Travel Template
+    Version     : 1.0
+\*-------------------------------------------------*/
+
+/*
+*    Table of Contents: 
+*        01. Google Font
+*        02. Section - Home
+*            - Home BG Static (default)
+*            - Home BG Parallax
+*            - Home BG Slideshow
+*            - Home BG Slider
+*            - Home BG Video
+*        03. Promo
+*        04. Section - Why Us
+*        05. Promo 2
+*        06. Why Us 2
+*        07. Section - Packages
+*        08. Reviews
+*        08. Section - Contact
+*        09. Footer
+*/
+
+
+
+
+
+/*------------------------------------*\
+    Google font
+\*------------------------------------*/
+
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,300,700);
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,600,700);
+
+
+
+
+
+/*------------------------------------*\
+    Section - Home
+\*------------------------------------*/
+
+/*
+* Home BG Static (default)
+*/
+
+#home {
+    background: url("../images/bg-home-1.jpg");
+}
+
+
+/*
+* Home BG Parallax
+*/
+
+#home-bg-parallax > .bg-parallax {
+    background: url("../images/bg-home-3.jpg");
+}
+
+
+/*
+* Home BG Slideshow
+*/
+
+#home-bg-slideshow .bg-slideshow-wrapper .slides > .bg-cover:nth-child(1) {
+    background: url("../images/bg-home-1.jpg");
+}
+#home-bg-slideshow .bg-slideshow-wrapper .slides > .bg-cover:nth-child(2) {
+    background: url("../images/bg-home-2.jpg");
+}
+#home-bg-slideshow .bg-slideshow-wrapper .slides > .bg-cover:nth-child(3) {
+    background: url("../images/bg-home-3.jpg");
+}
+
+
+/*
+* Home BG Slider
+*/
+
+#home-bg-slider .bg-slider-wrapper .flickity-slider .bg-cover:nth-child(1) {
+    background: url("../images/bg-home-1.jpg");
+}
+#home-bg-slider .bg-slider-wrapper .flickity-slider .bg-cover:nth-child(2) {
+    background: url("../images/bg-home-2.jpg");
+}
+#home-bg-slider .bg-slider-wrapper .flickity-slider .bg-cover:nth-child(3) {
+    background: url("../images/bg-home-3.jpg");
+}
+
+
+/*
+* Home BG Video
+*/
+
+#home-bg-video .player:before {
+    z-index: 15;
+}
+#home-bg-video .player.is-mobile {
+    display: none;
+}
+#home-bg-slideshow .display-table-cell,
+#home-bg-slider .display-table-cell,
+#home-bg-video .display-table-cell {
+    position: relative;
+    z-index: 20;
+}
+
+
+
+
+
+/*------------------------------------*\
+    Promo
+\*------------------------------------*/
+
+#promo .features-box:nth-child(1) .bg-cover {
+    background-image: url("../images/promo-1.jpg");
+}
+#promo .features-box:nth-child(2) .bg-cover {
+    background-image: url("../images/promo-2.jpg");
+}
+#promo .features-box:nth-child(3) .bg-cover {
+    background-image: url("../images/promo-3.jpg");
+}
+
+
+
+
+
+/*------------------------------------*\
+    Section - Why Us
+\*------------------------------------*/
+
+#why-us {
+    background: url("../images/bg-why-us.jpg");
+}
+
+
+
+
+
+/*------------------------------------*\
+    Promo 2
+\*------------------------------------*/
+
+#promo-2 {
+    background: url("../images/bg-promo-2.jpg");
+}
+@media (min-width: 992px) {
+    #promo-2 span {
+        top: -50px;
+    }
+}
+
+
+
+
+
+/*------------------------------------*\
+    Why Us 2
+\*------------------------------------*/
+
+#why-us-2 .features-box-wrapper {
+    box-shadow: 0px 5px 40px 0px rgba(0, 0, 0, 0.05);
+    margin-bottom: 80px;
+    margin-top: 80px;
+}
+@media (min-width: 768px) {
+    #why-us-2 .features-box-wrapper {
+        margin-bottom: 110px;
+        margin-top: 110px;
+    }
+}
+@media (min-width: 992px) {
+    #why-us-2 .features-box-wrapper {
+        margin-bottom: 140px;
+        margin-top: -100px;
+    }
+}
+
+
+
+
+
+/*------------------------------------*\
+    Section - Packages
+\*------------------------------------*/
+
+@media (min-width: 992px) {
+    #packages .carousel-custom-control .control-wrap {
+        margin-left: 0;
+    }
+}
+
+
+
+
+
+/*------------------------------------*\
+    Reviews
+\*------------------------------------*/
+
+#reviews .carousel-custom-control {
+    margin-top: 25px;
+}
+#reviews .carousel-custom-control .control-wrap {
+    margin-top: 0;
+}
+
+
+
+
+
+/*------------------------------------*\
+    Section - Contact
+\*------------------------------------*/
+
+#contact textarea {
+    height: 142px;
+    margin-bottom: 0;
+}
+
+
+
+
+
+/*------------------------------------*\
+    Footer
+\*------------------------------------*/
+
+.footer {
+    padding: 50px 0 32px;
+}
+.footer-logo {
+    padding-bottom: 50px;
+}
+.footer-logo img {
+    width: 120px;
+}
+.footer-social {
+    padding-bottom: 20px;
+}
+@media (min-width: 768px) {
+    .footer-social {
+        padding-bottom: 50px;
+    }
+}
+.footer-social ul > li {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+@media (min-width: 768px) {
+    .footer-social ul > li {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+}
+.footer-social ul > li:last-child {
+    padding-right: 0;
+}
+.footer-copyright {
+    padding-top: 32px;
+}

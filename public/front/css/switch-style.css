@@ -1,0 +1,112 @@
+.switch-style {
+    background: #ffffff;
+    -webkit-backface-visibility: hidden;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    box-shadow: 0 10px 50px 0 rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0 10px 50px 0 rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 10px 50px 0 rgba(0, 0, 0, 0.1);
+    padding: 18px 18px 12px;
+    position: fixed;
+    z-index: 999;
+    top: 150px;
+    left: auto;
+    right: -202px;
+    width: 202px;
+    -webkit-transition: right 0.3s ease-in-out;
+    -moz-transition: right 0.3s ease-in-out;
+    -o-transition: right 0.3s ease-in-out;
+    transition: right 0.3s ease-in-out;
+}
+
+.switch-style.active {
+    left: auto;
+    right: 0;
+}
+
+.switch-style .switch-style-toggle {
+    background: #ffffff;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    -webkit-box-shadow: -9px 5px 20px 0 rgba(0, 0, 0, 0.07);
+    -moz-box-shadow: -9px 5px 20px 0 rgba(0, 0, 0, 0.07);
+    box-shadow: -9px 5px 20px 0 rgba(0, 0, 0, 0.07);
+    position: absolute;
+    top: 30px;
+    left: auto;
+    right: 202px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+}
+
+.switch-style .switch-style-toggle:hover {
+    cursor: pointer;
+}
+
+.switch-style .switch-style-toggle i {
+    font-size: 20px;
+    line-height: 40px;
+}
+
+.switch-style h4 {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 8px;
+}
+
+.switch-style ul {
+    margin-left: 0;
+}
+
+.switch-style ul > li {
+    padding-right: 5px;
+    padding-left: 0;
+}
+
+.switch-style ul > li:last-child {
+    padding-right: 0;
+}
+
+.switch-style ul > li > a {
+    border-radius: 2px;
+    display: block;
+    width: 35px;
+    height: 30px;
+}
+
+.switch-style ul > li > a.artio_color_blue {
+    background: #016cff;
+}
+
+.switch-style ul > li > a.artio_color_green {
+    background: #0baf4e;
+}
+
+.switch-style ul > li > a.artio_color_green2 {
+    background: #30c291;
+}
+
+.switch-style ul > li > a.artio_color_orange {
+    background: #f9461d;
+}
+
+.switch-style ul > li > a.artio_color_orange2 {
+    background: #f26702;
+}
+
+.switch-style ul > li > a.artio_color_pink {
+    background: #ff1a56;
+}
+
+.switch-style ul > li > a.artio_color_purple {
+    background: #aa2e85;
+}
+
+.switch-style ul > li > a.artio_color_red {
+    background: #ef494d;
+}
+
+.switch-style p {
+    margin-top: 6px;
+}
