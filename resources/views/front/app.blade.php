@@ -19,10 +19,10 @@
         <div class="container">
             <div class="row no-padding-rl no-padding-top padding-7">
                 <div class="col-md-8 col-md-offset-2 text-center">
-                    <span class="display-block font-family-alt letter-spacing-1 text-gray-dark-2 text-medium text-uppercase">A great collection of our tour packages</span>
-                    <h2 class="display-block font-family-alt font-weight-700 letter-spacing-2 margin-2 no-margin-bottom no-margin-rl text-gray-dark-2 text-uppercase xs-title-large title-extra-large-2">Turkey Package Tours</h2>
+                    <span class="display-block font-family-alt letter-spacing-1 text-gray-dark-2 text-medium text-uppercase">KOLEKSI PAKET TOUR KAMI YANG BAGUS</span>
+                    <h2 class="display-block font-family-alt font-weight-700 letter-spacing-2 margin-2 no-margin-bottom no-margin-rl text-gray-dark-2 text-uppercase xs-title-large title-extra-large-2">Paket Perjalanan</h2>
                     <span class="bg-base-color display-inline-block margin-5 no-margin-bottom no-margin-rl separator-line-extra-thick-long"></span>
-                    <p class="font-family-alt margin-4 no-margin-bottom no-margin-rl sm-text-large text-extra-large text-gray-dark-2">You will enjoy with the most popular parts of Turkey and you will leave unforgettable memories from this country. We also offer local bus or domestic flight options in the same itineraries depending on your budget.</p>
+                    <p class="font-family-alt margin-4 no-margin-bottom no-margin-rl sm-text-large text-extra-large text-gray-dark-2">Anda akan menikmati dengan bagian paling populer dan Anda akan meninggalkan kenangan tak terlupakan dari perjalanan ini. Kami juga menawarkan pilihan bus lokal atau penerbangan domestik dalam rencana perjalanan yang sama tergantung pada anggaran Anda.</p>
                 </div>
 
             </div>
@@ -457,7 +457,6 @@
     </section>
 
     @include('front.mileston')
-    @include('front.travelFacts')
     @include('front.hotels')
 
     <div id="reviews" class="bg-white no-padding-rl padding-12">

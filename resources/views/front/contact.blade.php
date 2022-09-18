@@ -2,8 +2,8 @@
     <div class="container">
         <div class="row no-padding-rl no-padding-top padding-7">
             <div class="col-md-8">
-                <span class="display-block font-family-alt letter-spacing-1 text-gray-dark-2 text-medium text-uppercase">Get in touch with us</span>
-                <h2 class="display-block font-family-alt font-weight-700 letter-spacing-2 margin-2 no-margin-bottom no-margin-rl text-gray-dark-2 text-uppercase xs-title-large title-extra-large-2">Artio Tour & Travel</h2>
+                <span class="display-block font-family-alt letter-spacing-1 text-gray-dark-2 text-medium text-uppercase">Hubungi Kami</span>
+                <h2 class="display-block font-family-alt font-weight-700 letter-spacing-2 margin-2 no-margin-bottom no-margin-rl text-gray-dark-2 text-uppercase xs-title-large title-extra-large-2">SWJP Tour & Travel</h2>
                 <span class="bg-base-color display-inline-block margin-5 no-margin-bottom no-margin-rl separator-line-extra-thick-long"></span>
             </div>
 
@@ -18,16 +18,16 @@
                 <div class="sm-no-padding no-padding-right no-padding-tb padding-7">
                     <div class="row">
                         <div class="col-md-12">
-                            <span class="display-block text-gray-dark-2 xs-text-large title-small">E: <a href="https://demo.lucky-roo.com/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="47222936322e353e072635332e2833352631222b6924282a">[email&#160;protected]</a></span>
-                            <span class="display-block margin-1 no-margin-bottom no-margin-rl text-gray-dark-2 xs-text-large title-small">P: 0264 123 4567</span>
-                            <p class="margin-5 no-margin-bottom no-margin-rl text-gray-dark-2 title-small">Give us a call or drop by anytime, we endeavour to answer all enquiries within 24 hours on business days.</p>
+                            <span class="display-block text-gray-dark-2 xs-text-large title-small">Mail: <a href="" class="__cf_email__" data-cfemail="47222936322e353e072635332e2833352631222b6924282a">swjp@yahoo.co.id</a></span>
+                            <span class="display-block margin-1 no-margin-bottom no-margin-rl text-gray-dark-2 xs-text-large title-small">Telp: 082277958348</span>
+                            <p class="margin-5 no-margin-bottom no-margin-rl text-gray-dark-2 title-small">Hubungi kami kapan saja, kami berusaha menjawab semua pertanyaan dalam waktu 24 jam pada hari kerja.</p>
                             <p class="margin-5 no-margin-bottom no-margin-rl text-gray-dark-2 title-small">We are open from 8.30 AM — 4.00 PM week days.</p>
                             <span class="bg-base-color display-inline-block margin-5 no-margin-bottom no-margin-rl separator-line"></span>
                         </div>
 
                     </div>
 
-                    <form action="https://demo.lucky-roo.com/artio-v1.0/html/contact/send_mail.php" method="post" id="form-contact" class="margin-8 no-margin-bottom no-margin-rl">
+                    <form action="" method="post" id="form-contact" class="margin-8 no-margin-bottom no-margin-rl">
                         <div class="row">
                             <div class="col-md-6">
                                 <input type="text" placeholder="Name*" name="name" class="required">

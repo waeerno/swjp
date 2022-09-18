@@ -2,10 +2,10 @@
     <div class="container">
         <div class="row no-padding-rl no-padding-top padding-7">
             <div class="col-md-8 col-md-offset-2 text-center">
-                <span class="display-block font-family-alt letter-spacing-1 text-gray-dark-2 text-medium text-uppercase">Explore Turkey's most popular holiday destinations</span>
+                <span class="display-block font-family-alt letter-spacing-1 text-gray-dark-2 text-medium text-uppercase">JELAJAHI TUJUAN LIBUR PALING POPULER TURKI</span>
                 <h2 class="display-block font-family-alt font-weight-700 letter-spacing-2 margin-2 no-margin-bottom no-margin-rl text-gray-dark-2 text-uppercase xs-title-large title-extra-large-2">Turkey's Destinations</h2>
                 <span class="bg-base-color display-inline-block margin-5 no-margin-bottom no-margin-rl separator-line-extra-thick-long"></span>
-                <p class="font-family-alt margin-4 no-margin-bottom no-margin-rl sm-text-large text-extra-large text-gray-dark-2">Find your way around Turkey's regions. Discover beautiful islands or visit the cultural treasures. Turkey, with its cosmopolitan cities and quaint villages is one of the world's most fascinating destinations. Lorem Ipsum is dummy text.</p>
+                <p class="font-family-alt margin-4 no-margin-bottom no-margin-rl sm-text-large text-extra-large text-gray-dark-2">Temukan jalan Anda di sekitar wilayah Turki. Temukan pulau-pulau indah atau kunjungi kekayaan budaya. Turki, dengan kota-kota kosmopolitan dan desa-desa kunonya adalah salah satu tujuan paling menarik di dunia.</p>
             </div>
 
         </div>

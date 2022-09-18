@@ -2,8 +2,8 @@
     <div class="container">
         <div class="row no-padding-rl no-padding-top padding-7">
             <div class="col-md-8">
-                <span class="display-block font-family-alt letter-spacing-1 text-gray-dark-2 text-medium text-uppercase">Get out of your comfort zone</span>
-                <h2 class="display-block font-family-alt font-weight-700 letter-spacing-2 margin-2 no-margin-bottom no-margin-rl text-gray-dark-2 text-uppercase xs-title-large title-extra-large-2">Sister Hotels</h2>
+                <span class="display-block font-family-alt letter-spacing-1 text-gray-dark-2 text-medium text-uppercase">Keluar dari zona nyaman anda</span>
+                <h2 class="display-block font-family-alt font-weight-700 letter-spacing-2 margin-2 no-margin-bottom no-margin-rl text-gray-dark-2 text-uppercase xs-title-large title-extra-large-2">Hotel Rekomendasi</h2>
                 <span class="bg-base-color display-inline-block margin-5 no-margin-bottom no-margin-rl separator-line-extra-thick-long"></span>
             </div>
 

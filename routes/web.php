@@ -16,3 +16,11 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('front.app');
 });
+
+Route::get('/dashboard', function () {
+    return view('back.admin.beranda.index');
+});
+
+Route::get('/back', function () {
+    return view('back.app');
+});
