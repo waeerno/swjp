@@ -22,7 +22,7 @@
                     </div>
                 </div>
             </div>
-            z
+
         </div>
         <!--/ Medal Card -->
 
@@ -177,3 +177,7 @@
 
 </section>
 @endsection
+
+@push('script')
+<script src="{{ asset('app-assets/js/scripts/pages/dashboard-ecommerce.js') }}"></script>
+@endpush

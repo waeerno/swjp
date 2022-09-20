@@ -25,11 +25,7 @@
 
                 <li class="dropdown nav-item" data-menu="dropdown"><a class="dropdown-toggle nav-link d-flex align-items-center" href="#" data-toggle="dropdown"><i data-feather="package"></i><span data-i18n="Apps">Data Master</span></a>
                     <ul class="dropdown-menu">
-                        <li data-menu=""><a class="dropdown-item d-flex align-items-center" href="app-email.html" data-toggle="dropdown" data-i18n="Email"><i data-feather="mail"></i><span data-i18n="Email">Pelanggan</span></a>
-                        </li>
-                        <li data-menu=""><a class="dropdown-item d-flex align-items-center" href="app-chat.html" data-toggle="dropdown" data-i18n="Chat"><i data-feather="message-square"></i><span data-i18n="Chat">Admin</span></a>
-                        </li>
-                        <li data-menu=""><a class="dropdown-item d-flex align-items-center" href="app-todo.html" data-toggle="dropdown" data-i18n="Todo"><i data-feather="check-square"></i><span data-i18n="Todo">Talent</span></a>
+                        <li data-menu=""><a class="dropdown-item d-flex align-items-center" href="app-todo.html" data-toggle="dropdown" data-i18n="Todo"><i data-feather="users"></i><span data-i18n="users">Pengguna</span></a>
                         </li>
                         <li data-menu=""><a class="dropdown-item d-flex align-items-center" href="app-calendar.html" data-toggle="dropdown" data-i18n="Calendar"><i data-feather="calendar"></i><span data-i18n="Calendar">Hotel</span></a>
                         </li>
@@ -42,14 +38,6 @@
                         <li data-menu=""><a class="dropdown-item d-flex align-items-center" href="ui-typography.html" data-toggle="dropdown" data-i18n="Typography"><i data-feather="type"></i><span data-i18n="Typography">Paket</span></a>
                         </li>
                         <li data-menu=""><a class="dropdown-item d-flex align-items-center" href="ui-colors.html" data-toggle="dropdown" data-i18n="Colors"><i data-feather="droplet"></i><span data-i18n="Colors">Penawaran</span></a>
-                        </li>
-                        <li class="dropdown dropdown-submenu" data-menu="dropdown-submenu"><a class="dropdown-item d-flex align-items-center dropdown-toggle" href="#" data-toggle="dropdown" data-i18n="Components"><i data-feather="briefcase"></i><span data-i18n="Components">Reservasi</span></a>
-                            <ul class="dropdown-menu">
-                                <li data-menu=""><a class="dropdown-item d-flex align-items-center" href="component-alerts.html" data-toggle="dropdown" data-i18n="Alerts"><i data-feather="circle"></i><span data-i18n="Alerts">Reservasi</span></a>
-                                </li>
-                                <li data-menu=""><a class="dropdown-item d-flex align-items-center" href="component-avatar.html" data-toggle="dropdown" data-i18n="Avatar"><i data-feather="circle"></i><span data-i18n="Avatar">history</span></a>
-                                </li>
-                            </ul>
                         </li>
                     </ul>
                 </li>
