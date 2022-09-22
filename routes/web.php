@@ -37,6 +37,14 @@ Route::get('/wilayah', function () {
     return view('back.admin.master.wilayah.index');
 });
 
+Route::get('/paket', function () {
+    return view('back.admin.paket.index');
+});
+
+Route::get('/paket-detail', function () {
+    return view('back.admin.paketDetail.index');
+});
+
 Route::get('/back', function () {
     return view('back.app');
 });

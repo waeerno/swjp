@@ -17,6 +17,7 @@ return new class extends Migration
             $table->id();
             $table->string('wilayah_kode');
             $table->string('nama');
+            $table->string('kontak');
             $table->integer('bintang');
             $table->integer('harga');
             $table->timestamps();

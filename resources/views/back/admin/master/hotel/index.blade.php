@@ -13,11 +13,11 @@
                             <th></th>
                             <th></th>
                             <th>id</th>
-                            <th>Name</th>
-                            <th>Email</th>
-                            <th>Date</th>
-                            <th>Salary</th>
-                            <th>Status</th>
+                            <th>Hotel</th>
+                            <th>Kontak</th>
+                            <th>Bintang</th>
+                            <th>Harga</th>
+                            <th>Rate</th>
                             <th>Action</th>
                         </tr>
                     </thead>
@@ -66,8 +66,6 @@
 @endsection
 
 @push('script')
-{{-- <script src="{{asset('app-assets/js/scripts/tables/table-datatables-basic.js')}}"></script> --}}
-@endpush
 
 <script type="text/javascript">
     /**
@@ -78,9 +76,10 @@
         'use strict';
 
         var dt_basic_table = $('.datatables-basic')
-            , dt_date_table = $('.dt-date')
-            , assetPath = "{{ asset('app-assets/') }}";
-        // assetPath = '../../../app-assets/';
+            , dt_date_table = $('.dt-date'),
+            // assetPath = "{{ asset('app-assets/') }}";
+            // assetPath = '../../../app-assets/';
+            assetPath = 'app-assets/';
 
         if ($('body').attr('data-framework') === 'laravel') {
             assetPath = $('body').attr('data-asset-path');
@@ -406,14 +405,6 @@
             $('div.head-label').html('<h6 class="mb-0">Data Hotel</h6>');
         }
 
-        // Flat Date picker
-        if (dt_date_table.length) {
-            dt_date_table.flatpickr({
-                monthSelectorType: 'static'
-                , dateFormat: 'm/d/Y'
-            });
-        }
-
         // Add New record
         // ? Remove/Update this code as per your requirements ?
         var count = 101;
@@ -450,3 +441,4 @@
     });
 
 </script>
+@endpush

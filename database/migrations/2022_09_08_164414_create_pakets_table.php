@@ -16,8 +16,12 @@ return new class extends Migration
         Schema::create('pakets', function (Blueprint $table) {
             $table->id();
             $table->string('nama');
+            $table->text('deskripsi');
             $table->integer('harga');
-            $table->string('durasi');
+            $table->string('diskon');
+            $table->text('catatan');
+            $table->text('include');
+            $table->text('exclude');
             $table->timestamps();
         });
     }

@@ -17,6 +17,7 @@ return new class extends Migration
             $table->id();
             $table->unsignedBigInteger('paket_id');
             $table->string('nama');
+            $table->string('deskripsi');
             $table->string('wilayah_kode');
             $table->unsignedBigInteger('kendaraan_id');
             $table->unsignedBigInteger('hotel_id');

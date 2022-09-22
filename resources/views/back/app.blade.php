@@ -30,14 +30,14 @@
                 <div class="content-header-left col-md-9 col-12 mb-2">
                     <div class="row breadcrumbs-top">
                         <div class="col-12">
-                            <h2 class="content-header-title float-left mb-0">DataTables</h2>
+                            <h2 class="content-header-title float-left mb-0">Data Paket</h2>
                             <div class="breadcrumb-wrapper">
                                 <ol class="breadcrumb">
                                     <li class="breadcrumb-item"><a href="index.html">Home</a>
                                     </li>
-                                    <li class="breadcrumb-item"><a href="#">Datatable</a>
+                                    <li class="breadcrumb-item"><a href="#">Paket dan Tawaran</a>
                                     </li>
-                                    <li class="breadcrumb-item active">Basic
+                                    <li class="breadcrumb-item active">Paket
                                     </li>
                                 </ol>
                             </div>
