@@ -62,23 +62,36 @@
                                 <div class="text-center">
                                     <h4 class="card-title mb-1">Welcome</h4>
                                     <p class="card-text mb-2">Enter your email to continue.</p>
+                                    <div class="alert alert-primary" role="alert">
+                                        <div class="alert-body"> We have emailed your password reset link!</div>
+                                    </div>
+
                                 </div>
 
                                 <form class="auth-login-form mt-2" action="index.html" method="POST">
                                     <div class="form-group">
                                         <label for="login-email" class="form-label">Email</label>
-                                        <input type="text" class="form-control" name="email" placeholder="john@example.com" aria-describedby="login-email" tabindex="1" autofocus />
+                                        <input type="text" class="form-control" name="email" aria-describedby="login-email" tabindex="1" autofocus />
                                     </div>
 
                                     <div class="form-group">
                                         <div class="d-flex justify-content-between">
                                             <label for="login-password">Password</label>
-                                            <a href="page-auth-forgot-password-v1.html">
-                                                <small>Forgot Password?</small>
-                                            </a>
                                         </div>
                                         <div class="input-group input-group-merge form-password-toggle">
-                                            <input type="password" class="form-control form-control-merge" name="password" tabindex="2" />
+                                            <input type="password" class="form-control form-control-merge" placeholder="password" name="password" tabindex="2" />
+                                            <div class="input-group-append">
+                                                <span class="input-group-text cursor-pointer"><i data-feather="eye"></i></span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <div class="d-flex justify-content-between">
+                                            <label for="login-password">Password Confirmation</label>
+                                        </div>
+                                        <div class="input-group input-group-merge form-password-toggle">
+                                            <input type="password" class="form-control form-control-merge" placeholder="password confirmation" name="password" tabindex="3" />
                                             <div class="input-group-append">
                                                 <span class="input-group-text cursor-pointer"><i data-feather="eye"></i></span>
                                             </div>

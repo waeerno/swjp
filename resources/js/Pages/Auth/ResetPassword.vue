@@ -4,21 +4,21 @@
     <div class="card mb-0">
         <div class="card-body">
             <a href="javascript:void(0);" class="brand-logo">
-                <!-- <img src="images/logo.png'" width="90pt"> -->
                 <img src="/images/logo.png" width="70">
             </a>
             <div class="text-center">
-                <h4 class="card-title mb-1">Welcome</h4>
-                <p class="card-text mb-2">Enter your email to continue.</p>
+                <h4 class="card-title mb-1">Update Password</h4>
                 <div class="alert alert-primary" role="alert">
-                    <div v-if="session.status" class="alert-body"></div>
+                    <div v-if="session.status" class="alert-body">
+                        {{ session.status }}
+                    </div>
                 </div>
             </div>
-            {{ session.status }}
+
             <form class="auth-login-form mt-2" @submit.prevent="submit">
                 <div class="form-group">
                     <label for="login-email" class="form-label">Email</label>
-                    <input v-model="form.email" :class="{ 'is-invalid' : errors.email}" type="email"
+                    <input v-model="form.email" :class="{ 'is-invalid' : errors.email}" placeholder="Email" type="email"
                         class="form-control" tabindex="1" autofocus />
                 </div>
 
@@ -26,43 +26,38 @@
                     {{ errors.email }}
                 </div>
 
+                <!-- password -->
                 <div class="form-group">
                     <div class="d-flex justify-content-between">
                         <label for="login-password">Password</label>
-                        <a href="/forgot-password">
-                            <small>Forgot Password?</small>
-                        </a>
                     </div>
                     <div class="input-group input-group-merge form-password-toggle">
                         <input v-model="form.password" :class="{'is-invalid' : errors.password}" type="password"
-                            class="form-control form-control-merge" tabindex="2" />
+                            class="form-control form-control-merge" placeholder="password" name="password"
+                            tabindex="2" />
                         <div class="input-group-append">
                             <span class="input-group-text cursor-pointer"><i data-feather="eye"></i></span>
                         </div>
                     </div>
-                    <div v-if="errors.password" class="alert alert-danger mt-1">
-                        {{ errors.password }}
+                </div>
+                <div v-if="errors.password" class="alert alert-danger mt-1">
+                    {{ errors.password }}
+                </div>
+
+                <div class="form-group">
+                    <div class="input-group input-group-merge form-password-toggle">
+                        <input v-model="form.password_confirmation"
+                            :class="{'is-invalid' : errors.password_confirmation}" type="password"
+                            class="form-control form-control-merge" placeholder="password confirmation" name="password"
+                            tabindex="3" />
+                        <div class="input-group-append">
+                            <span class="input-group-text cursor-pointer"><i data-feather="eye"></i></span>
+                        </div>
                     </div>
                 </div>
-                <!-- <div class="form-group">
-                    <div class="custom-control custom-checkbox">
-                        <input class="custom-control-input" type="checkbox" id="remember-me" tabindex="3" />
-                        <label class="custom-control-label" for="remember-me"> Remember Me </label>
-                    </div>
-                </div> -->
-                <button type="submit" class="btn btn-primary btn-block" tabindex="4">Sign in</button>
+
+                <button type="submit" class="btn btn-primary btn-block" tabindex="4">Update Password</button>
             </form>
-
-            <div class="divider my-2">
-                <div class="divider-text">or</div>
-            </div>
-
-            <p class="text-center mt-2">
-                <span>New on our platform?</span>
-                <a href="/register">
-                    <span> Create an account</span>
-                </a>
-            </p>
 
         </div>
     </div>
@@ -98,15 +93,12 @@ export default {
         //define form state
         const form = reactive({
             email: '',
-            password: '',
         });
         //submit method
         const submit = () => {
             //send data to server
-            Inertia.post('/login', {
-                //data
+            Inertia.post('/forgot-password', {
                 email: form.email,
-                password: form.password,
             });
         }
         //return form state and submit method
