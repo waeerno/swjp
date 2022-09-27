@@ -5,7 +5,7 @@
             <ul class="nav navbar-nav">
                 <li class="nav-item">
                     <a class="navbar-brand" href="">
-                        <img src="{{ asset('images/logo.png') }}" alt="Logo" height="35">
+                        <img src="/images/logo.png" alt="Logo" height="35">
                         <h2 class="brand-text mb-0">SWJP</h2>
                     </a>
                 </li>
@@ -45,8 +45,7 @@
                         <li class="scrollable-container media-list"><a class="d-flex" href="javascript:void(0)">
                                 <div class="media d-flex align-items-start">
                                     <div class="media-left">
-                                        <div class="avatar"><img
-                                                src="{{ asset('app-assets/images/portrait/small/avatar-s-15.jpg') }}"
+                                        <div class="avatar"><img src="/app-assets/images/portrait/small/avatar-s-15.jpg"
                                                 alt="avatar" width="32" height="32"></div>
                                     </div>
                                     <div class="media-body">
@@ -59,8 +58,7 @@
                             </a><a class="d-flex" href="javascript:void(0)">
                                 <div class="media d-flex align-items-start">
                                     <div class="media-left">
-                                        <div class="avatar"><img
-                                                src="{{ asset('app-assets/images/portrait/small/avatar-s-3.jpg') }}"
+                                        <div class="avatar"><img src="/app-assets/images/portrait/small/avatar-s-3.jpg"
                                                 alt="avatar" width="32" height="32"></div>
                                     </div>
                                     <div class="media-body">
@@ -148,8 +146,8 @@
                         aria-expanded="false">
                         <div class="user-nav d-sm-flex d-none"><span class="user-name font-weight-bolder">John
                                 Doe</span><span class="user-status">Admin</span></div><span class="avatar"><img
-                                class="round" src="{{ asset('app-assets//images/portrait/small/avatar-s-11.jpg') }}"
-                                alt="avatar" height="40" width="40"><span class="avatar-status-online"></span></span>
+                                class="round" src="/app-assets/images/portrait/small/avatar-s-11.jpg" alt="avatar"
+                                height="40" width="40"><span class="avatar-status-online"></span></span>
                     </a>
                     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdown-user">
                         <a class="dropdown-item" href="page-profile.html"> <i class="mr-50" data-feather="user"></i>
@@ -161,7 +159,7 @@
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="page-pricing.html"><i class="mr-50"
                                 data-feather="credit-card"></i> Paket</a>
-                        <a class="dropdown-item" href="page-auth-login-v2.html"><i class="mr-50"
+                        <a class="dropdown-item" href="/logout" method="POST" as="button"><i class="mr-50"
                                 data-feather="power"></i> Logout</a>
                     </div>
                 </li>
