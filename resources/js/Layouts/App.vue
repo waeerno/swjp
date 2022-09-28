@@ -3,7 +3,7 @@
     <Header />
     <!-- END: Header-->
     <!-- BEGIN: Main Menu-->
-    <Sidebars />
+    <Sidebar />
     <!-- END: Main Menu-->
     <!-- BEGIN: Content-->
     <div class="app-content content ">

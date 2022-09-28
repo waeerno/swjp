@@ -43,14 +43,14 @@
     <!-- END: Page CSS-->
 
     <!-- BEGIN: Custom CSS-->
-    <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/style.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('asset/css/style.css') }}">
     <!-- END: Custom CSS-->
 
     <script src="{{ asset('/admin/js/coreui.bundle.min.js') }}" defer></script>
     <script src="{{ mix('/js/app.js') }}" defer></script>
 
 </head>
-<body class="horizontal-layout horizontal-menu blank-page navbar-floating footer-static  " data-open="hover" data-menu="horizontal-menu" data-col="blank-page">
+<body class="horizontal-layout horizontal-menu navbar-floating footer-static  " data-open="hover" data-menu="horizontal-menu" data-col="">
 
 
     @inertia
