@@ -23031,6 +23031,33 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
 
 /***/ }),
 
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/Apps/Permissions/Index.vue?vue&type=template&id=a5ff365a":
+/*!***************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/Apps/Permissions/Index.vue?vue&type=template&id=a5ff365a ***!
+  \***************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": () => (/* binding */ render)
+/* harmony export */ });
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
+
+var _hoisted_1 = {
+  "class": "row",
+  id: "table-hover-animation"
+};
+
+var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"col-12\"><div class=\"card\"><div class=\"card-header\"><h4 class=\"card-title\">Permission</h4></div><div class=\"card-body\"><p class=\"card-text\"> Kelola Data permission. </p></div><div class=\"table-responsive\"><table class=\"table table-hover-animation\"><thead><tr><th>Permission Name</th></tr></thead><tbody><tr><td>1</td><td>Mobil Dinas</td><td>1</td><td><span class=\"badge badge-pill badge-light-primary mr-1\">Tersedia</span></td><td><div class=\"dropdown\"><button type=\"button\" class=\"btn btn-sm dropdown-toggle hide-arrow\" data-toggle=\"dropdown\"><i data-feather=\"more-vertical\"></i></button><div class=\"dropdown-menu\"><a class=\"dropdown-item\" href=\"javascript:void(0);\"><i data-feather=\"edit-2\" class=\"mr-50\"></i><span>Edit</span></a><a class=\"dropdown-item\" href=\"javascript:void(0);\"><i data-feather=\"trash\" class=\"mr-50\"></i><span>Delete</span></a></div></div></td></tr><tr><td>2</td><td>Zoom Premium</td><td>1</td><td><span class=\"badge badge-pill badge-light-primary mr-1\">Tersedia</span></td><td><div class=\"dropdown\"><button type=\"button\" class=\"btn btn-sm dropdown-toggle hide-arrow\" data-toggle=\"dropdown\"><i data-feather=\"more-vertical\"></i></button><div class=\"dropdown-menu\"><a class=\"dropdown-item\" href=\"javascript:void(0);\"><i data-feather=\"edit-2\" class=\"mr-50\"></i><span>Edit</span></a><a class=\"dropdown-item\" href=\"javascript:void(0);\"><i data-feather=\"trash\" class=\"mr-50\"></i><span>Delete</span></a></div></div></td></tr><tr><td>3</td><td>Laboratorium</td><td>4</td><td><span class=\"badge badge-pill badge-light-primary mr-1\">Tersedia</span></td><td><div class=\"dropdown\"><button type=\"button\" class=\"btn btn-sm dropdown-toggle hide-arrow\" data-toggle=\"dropdown\"><i data-feather=\"more-vertical\"></i></button><div class=\"dropdown-menu\"><a class=\"dropdown-item\" href=\"javascript:void(0);\"><i data-feather=\"edit-2\" class=\"mr-50\"></i><span>Edit</span></a><a class=\"dropdown-item\" href=\"javascript:void(0);\"><i data-feather=\"trash\" class=\"mr-50\"></i><span>Delete</span></a></div></div></td></tr></tbody></table></div></div></div>", 1);
+
+var _hoisted_3 = [_hoisted_2];
+function render(_ctx, _cache) {
+  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_1, _hoisted_3);
+}
+
+/***/ }),
+
 /***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/Auth/ForgotPassword.vue?vue&type=template&id=2d73eca8":
 /*!************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/Auth/ForgotPassword.vue?vue&type=template&id=2d73eca8 ***!
@@ -49692,6 +49719,32 @@ if (false) {}
 
 /***/ }),
 
+/***/ "./resources/js/Pages/Apps/Permissions/Index.vue":
+/*!*******************************************************!*\
+  !*** ./resources/js/Pages/Apps/Permissions/Index.vue ***!
+  \*******************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _Index_vue_vue_type_template_id_a5ff365a__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Index.vue?vue&type=template&id=a5ff365a */ "./resources/js/Pages/Apps/Permissions/Index.vue?vue&type=template&id=a5ff365a");
+/* harmony import */ var C_laragon_www_swjp_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
+
+const script = {}
+
+;
+const __exports__ = /*#__PURE__*/(0,C_laragon_www_swjp_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_1__["default"])(script, [['render',_Index_vue_vue_type_template_id_a5ff365a__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/Pages/Apps/Permissions/Index.vue"]])
+/* hot reload */
+if (false) {}
+
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__exports__);
+
+/***/ }),
+
 /***/ "./resources/js/Pages/Auth/ForgotPassword.vue":
 /*!****************************************************!*\
   !*** ./resources/js/Pages/Auth/ForgotPassword.vue ***!
@@ -50037,6 +50090,22 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/js/Pages/Apps/Permissions/Index.vue?vue&type=template&id=a5ff365a":
+/*!*************************************************************************************!*\
+  !*** ./resources/js/Pages/Apps/Permissions/Index.vue?vue&type=template&id=a5ff365a ***!
+  \*************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_Index_vue_vue_type_template_id_a5ff365a__WEBPACK_IMPORTED_MODULE_0__.render)
+/* harmony export */ });
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_Index_vue_vue_type_template_id_a5ff365a__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../../../node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!../../../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./Index.vue?vue&type=template&id=a5ff365a */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/Apps/Permissions/Index.vue?vue&type=template&id=a5ff365a");
+
+
+/***/ }),
+
 /***/ "./resources/js/Pages/Auth/ForgotPassword.vue?vue&type=template&id=2d73eca8":
 /*!**********************************************************************************!*\
   !*** ./resources/js/Pages/Auth/ForgotPassword.vue?vue&type=template&id=2d73eca8 ***!
@@ -50328,6 +50397,8 @@ function compileToFunction(template, options) {
 var map = {
 	"./Apps/Dashboard/Index": "./resources/js/Pages/Apps/Dashboard/Index.vue",
 	"./Apps/Dashboard/Index.vue": "./resources/js/Pages/Apps/Dashboard/Index.vue",
+	"./Apps/Permissions/Index": "./resources/js/Pages/Apps/Permissions/Index.vue",
+	"./Apps/Permissions/Index.vue": "./resources/js/Pages/Apps/Permissions/Index.vue",
 	"./Auth/ForgotPassword": "./resources/js/Pages/Auth/ForgotPassword.vue",
 	"./Auth/ForgotPassword.vue": "./resources/js/Pages/Auth/ForgotPassword.vue",
 	"./Auth/Login": "./resources/js/Pages/Auth/Login.vue",
