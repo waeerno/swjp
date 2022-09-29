@@ -1,6 +1,6 @@
 <template>
     <nav aria-label="Page navigation">
-        <ul :class="`pagination justify-content-${align} mb-2 mr-2`">
+        <ul :class="`pagination justify-content-${align} m-2`">
             <li :class="['page-item', link.url == null ? 'disabled' : '', link.active ? 'active' : '',]"
                 v-for="(link, index) in links" :key="index">
                 <Link class="page-link" :href="link.url === null ? '#' : link.url" v-html="link.label">

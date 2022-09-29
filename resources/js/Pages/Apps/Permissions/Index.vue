@@ -6,15 +6,15 @@
                     <h4 class="card-title">Permission</h4>
                 </div>
                 <div class="card-body">
-                    <form>
-                        <div class="input-group">
-                            <input type="text" class="form-control" placeholder="search by permission name...">
+                    <form @submit.prevent="handleSearch">
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" v-model="search"
+                                placeholder="search by permission name...">
                             <button class="btn btn-primary input-group-text" type="submit">
-                                <i class="fa fa-search me-2"></i>
-                                SEARCH
-                            </button>
+                                <i data-feather='search'></i></button>
                         </div>
                     </form>
+
                 </div>
                 <div class="table-responsive">
                     <table class="table table-hover-animation">
@@ -43,6 +43,11 @@ import LayoutApp from '../../../Layouts/App.vue';
 import Pagination from '../../../Components/Pagination.vue';
 //import Heade and Link from Inertia
 import { Head, Link } from '@inertiajs/inertia-vue3';
+//import ref from vue
+import { ref } from 'vue';
+//import inertia adapter
+import { Inertia } from '@inertiajs/inertia';
+
 export default {
     //layout
     layout: LayoutApp,
@@ -55,6 +60,23 @@ export default {
     //props
     props: {
         permissions: Object,
+    },
+    setup() {
+        //define state search
+        const search = ref('' || (new
+            URL(document.location)).searchParams.get('q'));
+        //define method search
+        const handleSearch = () => {
+            Inertia.get('/apps/permissions', {
+                //send params "q" with value from state "search"
+                q: search.value,
+            });
+        }
+        //return
+        return {
+            search,
+            handleSearch,
+        }
     }
 }
 </script>

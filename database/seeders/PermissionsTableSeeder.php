@@ -21,6 +21,26 @@ class PermissionsTableSeeder extends Seeder
             'guard_name'    => 'web'
         ]);
 
+        //role permissions
+        Permission::create([
+            'name'          => 'roles.index',
+            'guard_name'    => 'web'
+        ]);
+
+        Permission::create([
+            'name'          => 'roles.create',
+            'guard_name'    => 'web'
+        ]);
+
+        Permission::create([
+            'name'          => 'roles.edit',
+            'guard_name'    => 'web'
+        ]);
+
+        Permission::create([
+            'name'          => 'roles.delete',
+            'guard_name'    => 'web'
+        ]);
         //permission user
         Permission::create([
             'name'          => 'user.index',
