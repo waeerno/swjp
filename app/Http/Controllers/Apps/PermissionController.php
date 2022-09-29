@@ -25,6 +25,10 @@ class PermissionController extends Controller
             }
         )->latest()->paginate(5);
         //return inertia view
+
+        // echo "here";
+        // die;
+        // dd($permissions);
         return inertia('Apps/Permissions/Index', [
             'permissions' => $permissions
         ]);

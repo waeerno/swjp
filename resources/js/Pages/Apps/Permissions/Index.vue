@@ -6,9 +6,15 @@
                     <h4 class="card-title">Permission</h4>
                 </div>
                 <div class="card-body">
-                    <p class="card-text">
-                        Kelola Data permission.
-                    </p>
+                    <form>
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="search by permission name...">
+                            <button class="btn btn-primary input-group-text" type="submit">
+                                <i class="fa fa-search me-2"></i>
+                                SEARCH
+                            </button>
+                        </div>
+                    </form>
                 </div>
                 <div class="table-responsive">
                     <table class="table table-hover-animation">
@@ -18,84 +24,37 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
-                                <td>1</td>
-                                <td>Mobil Dinas</td>
-                                <td>1</td>
-                                <td><span class="badge badge-pill badge-light-primary mr-1">Tersedia</span></td>
-                                <td>
-                                    <div class="dropdown">
-                                        <button type="button" class="btn btn-sm dropdown-toggle hide-arrow"
-                                            data-toggle="dropdown">
-                                            <i data-feather="more-vertical"></i>
-                                        </button>
-                                        <div class="dropdown-menu">
-                                            <a class="dropdown-item" href="javascript:void(0);">
-                                                <i data-feather="edit-2" class="mr-50"></i>
-                                                <span>Edit</span>
-                                            </a>
-                                            <a class="dropdown-item" href="javascript:void(0);">
-                                                <i data-feather="trash" class="mr-50"></i>
-                                                <span>Delete</span>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <td>2</td>
-                                <td>Zoom Premium</td>
-                                <td>1</td>
-                                <td><span class="badge badge-pill badge-light-primary mr-1">Tersedia</span></td>
-                                <td>
-                                    <div class="dropdown">
-                                        <button type="button" class="btn btn-sm dropdown-toggle hide-arrow"
-                                            data-toggle="dropdown">
-                                            <i data-feather="more-vertical"></i>
-                                        </button>
-                                        <div class="dropdown-menu">
-                                            <a class="dropdown-item" href="javascript:void(0);">
-                                                <i data-feather="edit-2" class="mr-50"></i>
-                                                <span>Edit</span>
-                                            </a>
-                                            <a class="dropdown-item" href="javascript:void(0);">
-                                                <i data-feather="trash" class="mr-50"></i>
-                                                <span>Delete</span>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <td>3</td>
-                                <td>Laboratorium</td>
-                                <td>4</td>
-                                <td><span class="badge badge-pill badge-light-primary mr-1">Tersedia</span></td>
-                                <td>
-                                    <div class="dropdown">
-                                        <button type="button" class="btn btn-sm dropdown-toggle hide-arrow"
-                                            data-toggle="dropdown">
-                                            <i data-feather="more-vertical"></i>
-                                        </button>
-                                        <div class="dropdown-menu">
-                                            <a class="dropdown-item" href="javascript:void(0);">
-                                                <i data-feather="edit-2" class="mr-50"></i>
-                                                <span>Edit</span>
-                                            </a>
-                                            <a class="dropdown-item" href="javascript:void(0);">
-                                                <i data-feather="trash" class="mr-50"></i>
-                                                <span>Delete</span>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </td>
+                            <tr v-for="(permission, index) in permissions.data" :key="index">
+                                <td> {{ permission.name }}</td>
                             </tr>
                         </tbody>
                     </table>
+                    <Pagination :links="permissions.links" align="end" />
                 </div>
             </div>
         </div>
     </div>
 </template>
+
+<script>
+//import layout
+import LayoutApp from '../../../Layouts/App.vue';
+//import component pagination
+import Pagination from '../../../Components/Pagination.vue';
+//import Heade and Link from Inertia
+import { Head, Link } from '@inertiajs/inertia-vue3';
+export default {
+    //layout
+    layout: LayoutApp,
+    //register component
+    components: {
+        Head,
+        Link,
+        Pagination
+    },
+    //props
+    props: {
+        permissions: Object,
+    }
+}
+</script>
