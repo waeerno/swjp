@@ -75,6 +75,7 @@ class RoleController extends Controller
     {
         //get role
         $role = Role::with('permissions')->findOrFail($id);
+        // dd($role);
         //get permission all
         $permissions = Permission::all();
         //render with inertia
