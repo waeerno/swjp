@@ -44,12 +44,7 @@
                         {{ errors.password }}
                     </div>
                 </div>
-                <!-- <div class="form-group">
-                    <div class="custom-control custom-checkbox">
-                        <input class="custom-control-input" type="checkbox" id="remember-me" tabindex="3" />
-                        <label class="custom-control-label" for="remember-me"> Remember Me </label>
-                    </div>
-                </div> -->
+
                 <button type="submit" class="btn btn-primary btn-block" tabindex="4">Sign in</button>
             </form>
 

@@ -20,81 +20,117 @@
             <div class="navbar-container main-menu-content" data-menu="menu-container">
                 <!-- include includes/mixins-->
                 <ul class="nav navbar-nav" id="main-menu-navigation" data-menu="menu-navigation">
-                    <li class="nav-item  @if (Request::segment(1)=='beranda' ) active @endif">
-                        <a class="dropdown d-flex align-items-center" href="/dashboard">
-                            <i data-feather="home"></i>
-                            <span data-i18n="Dashboard">Dashboard</span>
-                        </a>
+
+                    <li :class="{ 'active': $page.url.startsWith('/apps/dashboard') }" class="nav-item">
+                        <Link class="nav-link d-flex align-items-center" href="/apps/dashboard">
+                        <i data-feather="home"></i>
+                        <span>Dashboard</span>
+                        </Link>
                     </li>
 
-                    <li class="dropdown nav-item" data-menu="dropdown"><a
-                            class="dropdown-toggle nav-link d-flex align-items-center" href="#"
-                            data-toggle="dropdown"><i data-feather="package"></i><span data-i18n="Apps">Data
-                                Master</span></a>
+                    <li class="dropdown nav-item" data-menu="dropdown">
+                        <a class="dropdown-toggle nav-link d-flex align-items-center" href="#" data-toggle="dropdown">
+                            <i data-feather='database'></i>
+                            <span data-i18n="Apps">Data Master</span>
+                        </a>
                         <ul class="dropdown-menu">
-                            <li data-menu=""><a class="dropdown-item d-flex align-items-center" href="app-todo.html"
-                                    data-toggle="dropdown" data-i18n="Todo"><i data-feather="users"></i><span
-                                        data-i18n="users">Pengguna</span></a>
+                            <li :class="{ 'active': $page.url.startsWith('/apps/user') }" data-menu="">
+                                <Link class="dropdown-item d-flex align-items-center" href="/apps/dashboard">
+                                <i data-feather='circle'></i>
+                                <span>User</span>
+                                </Link>
                             </li>
-                            <li data-menu=""><a class="dropdown-item d-flex align-items-center" href="app-calendar.html"
-                                    data-toggle="dropdown" data-i18n="Calendar"><i data-feather="calendar"></i><span
-                                        data-i18n="Calendar">Hotel</span></a>
-                            </li>
-                            <li data-menu=""><a class="dropdown-item d-flex align-items-center" href="app-kanban.html"
-                                    data-toggle="dropdown" data-i18n="Kanban"><i data-feather="grid"></i><span
-                                        data-i18n="Kanban">Wilayah</span></a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="dropdown nav-item" data-menu="dropdown"><a
-                            class="dropdown-toggle nav-link d-flex align-items-center" href="#"
-                            data-toggle="dropdown"><i data-feather="layers"></i><span data-i18n="User Interface">Paket
-                                dan Penawaran</span></a>
-                        <ul class="dropdown-menu">
-                            <li data-menu=""><a class="dropdown-item d-flex align-items-center"
-                                    href="ui-typography.html" data-toggle="dropdown" data-i18n="Typography"><i
-                                        data-feather="type"></i><span data-i18n="Typography">Paket</span></a>
-                            </li>
-                            <li data-menu=""><a class="dropdown-item d-flex align-items-center" href="ui-colors.html"
-                                    data-toggle="dropdown" data-i18n="Colors"><i data-feather="droplet"></i><span
-                                        data-i18n="Colors">Penawaran</span></a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="dropdown nav-item" data-menu="dropdown"><a
-                            class="dropdown-toggle nav-link d-flex align-items-center" href="#"
-                            data-toggle="dropdown"><i data-feather="edit"></i><span
-                                data-i18n="Forms &amp; Tables">Reservasi</span></a>
-                        <ul class="dropdown-menu">
-                            <li data-menu=""><a class="dropdown-item d-flex align-items-center" href="form-layout.html"
-                                    data-toggle="dropdown" data-i18n="Form Layout"><i data-feather="box"></i><span
-                                        data-i18n="Form Layout">Reservasi</span></a>
-                            </li>
-                            <li data-menu=""><a class="dropdown-item d-flex align-items-center" href="form-wizard.html"
-                                    data-toggle="dropdown" data-i18n="Form Wizard"><i data-feather="package"></i><span
-                                        data-i18n="Form Wizard">Arsip</span></a>
+                            <li :class="{ 'active': $page.url.startsWith('/apps/wilayah') }" data-menu="">
+                                <Link class="dropdown-item d-flex align-items-center" href="/apps/dashboard">
+                                <i data-feather='circle'></i>
+                                <span>Wiyayah</span>
+                                </Link>
                             </li>
                         </ul>
                     </li>
 
-                    <li class="nav-item @if (Request::segment(1)=='penjelasan' ) active @endif">
-                        <a class=" dropdown d-flex align-items-center" href="">
-                            <i data-feather='help-circle'></i>
-                            <span data-i18n="Dashboard">Profile</span>
+                    <li class="dropdown nav-item" data-menu="dropdown">
+                        <a class="dropdown-toggle nav-link d-flex align-items-center" href="#" data-toggle="dropdown">
+                            <i data-feather="package"></i>
+                            <span data-i18n="Apps">Paket dan Penawaran</span>
                         </a>
+                        <ul class="dropdown-menu">
+                            <li :class="{ 'active': $page.url.startsWith('/apps/customer') }" data-menu="">
+                                <Link class="dropdown-item d-flex align-items-center" href="/apps/dashboard">
+                                <i data-feather='circle'></i>
+                                <span>Paket</span>
+                                </Link>
+                            </li>
+                            <li :class="{ 'active': $page.url.startsWith('/apps/user') }" data-menu="">
+                                <Link class="dropdown-item d-flex align-items-center" href="/apps/dashboard">
+                                <i data-feather='circle'></i>
+                                <span>Penawaran</span>
+                                </Link>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="dropdown nav-item" data-menu="dropdown">
+                        <a class="dropdown-toggle nav-link d-flex align-items-center" href="#" data-toggle="dropdown">
+                            <i data-feather="edit"></i>
+                            <span data-i18n="Apps">Reservasi</span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li :class="{ 'active': $page.url.startsWith('/apps/customer') }" data-menu="">
+                                <Link class="dropdown-item d-flex align-items-center" href="/apps/dashboard">
+                                <i data-feather='circle'></i>
+                                <span>Reservasi</span>
+                                </Link>
+                            </li>
+                            <li :class="{ 'active': $page.url.startsWith('/apps/user') }" data-menu="">
+                                <Link class="dropdown-item d-flex align-items-center" href="/apps/dashboard">
+                                <i data-feather='circle'></i>
+                                <span>Arsip</span>
+                                </Link>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="dropdown nav-item" data-menu="dropdown">
+                        <a class="dropdown-toggle nav-link d-flex align-items-center" href="#" data-toggle="dropdown">
+                            <i data-feather='share-2'></i>
+                            <span data-i18n="Apps">Authorize</span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li :class="{ 'active': $page.url.startsWith('/apps/roles') }" data-menu="">
+                                <Link class="dropdown-item d-flex align-items-center" href="/apps/roles">
+                                <i data-feather='circle'></i>
+                                <span>Role</span>
+                                </Link>
+                            </li>
+                            <li :class="{ 'active': $page.url.startsWith('/apps/permissions') }" data-menu="">
+                                <Link class="dropdown-item d-flex align-items-center" href="/apps/permissions">
+                                <i data-feather='circle'></i>
+                                <span>Permissions</span>
+                                </Link>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li :class="{ 'active': $page.url.startsWith('/apps/profile') }" class="nav-item">
+                        <Link class="nav-link d-flex align-items-center" href="/apps/dashboard">
+                        <i data-feather="user"></i>
+                        <span>Profile</span>
+                        </Link>
                     </li>
 
                     <li class="nav-item">
-                        <a class="dropdown d-flex align-items-center" href="/logout">
-                            <i data-feather='power'></i>
-                            <span data-i18n="Dashboard">Log out</span>
-                        </a>
+                        <Link class="nav-link d-flex align-items-center" href="/apps/dashboard">
+                        <i data-feather="power"></i>
+                        <span>Logout</span>
+                        </Link>
                     </li>
 
                 </ul>
             </div>
         </div>
     </div>
+
 
 </template>
 

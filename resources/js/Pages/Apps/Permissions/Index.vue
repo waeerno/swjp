@@ -20,11 +20,13 @@
                     <table class="table table-hover-animation">
                         <thead>
                             <tr>
+                                <th style="width: 10pt;">No</th>
                                 <th>Permission Name</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr v-for="(permission, index) in permissions.data" :key="index">
+                                <td> {{ index +1 }}</td>
                                 <td> {{ permission.name }}</td>
                             </tr>
                         </tbody>
