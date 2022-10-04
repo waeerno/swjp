@@ -1,4 +1,8 @@
 <template>
+
+    <Head>
+        <title>Permission - SWJP</title>
+    </Head>
     <div class="row" id="table-hover-animation">
         <div class="col-12">
             <div class="card">

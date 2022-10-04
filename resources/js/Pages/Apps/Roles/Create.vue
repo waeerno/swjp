@@ -1,7 +1,7 @@
 <template>
 
     <Head>
-        <title>Add New Role - Aplikasi Kasir</title>
+        <title>Add New Role - SWJP</title>
     </Head>
     <main class="c-main">
         <div class="container-fluid">

@@ -1,7 +1,7 @@
 <template>
 
     <Head>
-        <title>Edit Role - Aplikasi Kasir</title>
+        <title>Edit Role - SWJP</title>
     </Head>
     <main class="c-main">
         <div class="container-fluid">

@@ -8,7 +8,7 @@
     <meta name="description" content="SWJP Tour and Travel, Solusi perjalanan praktis dengan harga terjangkau">
     <meta name="keywords" content="SWJP sistem pariwisata, paket travel, perjalanan, pariwisata">
     <meta name="author" content="ERNO IRWANDI">
-    <title>SWJP-APP</title>
+    {{-- <title>SWJP-APP</title> --}}
     <link rel="apple-touch-icon" href="{{ asset('images/logo.png') }}">
     <link rel="shortcut icon" type="image/x-icon" href="{{ asset('images/logo.png') }}">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500;1,600" rel="stylesheet">

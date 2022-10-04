@@ -37,6 +37,7 @@ class UserController extends Controller
         //get roles
         $roles = Role::all();
         //return inertia
+        // dd($roles);
         return Inertia::render('Apps/Users/Create', [
             'roles' => $roles
         ]);

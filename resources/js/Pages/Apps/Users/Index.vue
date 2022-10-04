@@ -1,5 +1,8 @@
 <template>
 
+    <Head>
+        <title>User - SWJP</title>
+    </Head>
     <div class="row" id="table-hover-animation">
         <div class="col-12">
             <div class="card">

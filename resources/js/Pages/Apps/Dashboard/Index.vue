@@ -1,4 +1,8 @@
 <template>
+
+    <Head>
+        <title>Dashboard - SWJP</title>
+    </Head>
     <section id="dashboard-ecommerce">
         <div class="row match-height">
             <!-- Medal Card -->
