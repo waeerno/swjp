@@ -35,13 +35,13 @@
                         </a>
                         <ul class="dropdown-menu">
                             <li :class="{ 'active': $page.url.startsWith('/apps/user') }" data-menu="">
-                                <Link class="dropdown-item d-flex align-items-center" href="/apps/dashboard">
+                                <Link class="dropdown-item d-flex align-items-center" href="/apps/users">
                                 <i data-feather='circle'></i>
                                 <span>User</span>
                                 </Link>
                             </li>
                             <li :class="{ 'active': $page.url.startsWith('/apps/wilayah') }" data-menu="">
-                                <Link class="dropdown-item d-flex align-items-center" href="/apps/dashboard">
+                                <Link class="dropdown-item d-flex align-items-center" href="/apps/wilayah">
                                 <i data-feather='circle'></i>
                                 <span>Wiyayah</span>
                                 </Link>
@@ -61,7 +61,7 @@
                                 <span>Paket</span>
                                 </Link>
                             </li>
-                            <li :class="{ 'active': $page.url.startsWith('/apps/user') }" data-menu="">
+                            <li :class="{ 'active': $page.url.startsWith('/apps/penawaran') }" data-menu="">
                                 <Link class="dropdown-item d-flex align-items-center" href="/apps/dashboard">
                                 <i data-feather='circle'></i>
                                 <span>Penawaran</span>
@@ -82,7 +82,7 @@
                                 <span>Reservasi</span>
                                 </Link>
                             </li>
-                            <li :class="{ 'active': $page.url.startsWith('/apps/user') }" data-menu="">
+                            <li :class="{ 'active': $page.url.startsWith('/apps/arsip') }" data-menu="">
                                 <Link class="dropdown-item d-flex align-items-center" href="/apps/dashboard">
                                 <i data-feather='circle'></i>
                                 <span>Arsip</span>

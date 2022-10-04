@@ -18,7 +18,7 @@ use Illuminate\Support\Facades\Route;
 // });
 
 //route home
-Route::get('/login', function () {
+Route::get('/', function () {
     return \Inertia\Inertia::render('Auth/Login');
 })->middleware('guest');
 
@@ -30,12 +30,15 @@ Route::prefix('apps')->group(function () {
         Route::get('dashboard', App\Http\Controllers\Apps\DashboardController::class)->name('apps.dashboard');
 
         //route permissions
-        Route::get('/permissions', \App\Http\Controllers\Apps\PermissionController::class)->name('apps.permissions.index')
-            ->middleware('permission:permissions.index');
+        Route::get('/permissions', \App\Http\Controllers\Apps\PermissionController::class)->name('apps.permissions.index')->middleware('permission:permissions.index');
 
         //route resource roles
-        Route::resource('/roles', \App\Http\Controllers\Apps\RoleController::class, ['as' => 'apps'])
-            ->middleware('permission:roles.index|roles.create|roles.edit|roles.delete');
+        Route::resource('/roles', \App\Http\Controllers\Apps\RoleController::class, ['as' => 'apps'])->middleware('permission:roles.index|roles.create|roles.edit|roles.delete');
+
+        //route ressource users
+        Route::resource('/users', \App\Http\Controllers\Apps\UserController::class, ['as' => 'apps'])
+            ->middleware('permission:user.index|user.create|user.edit|user.delete');
+        // ->middleware('permission:user.index|user.create|user.edit|user.delete');
     });
 });
 
