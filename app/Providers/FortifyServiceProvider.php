@@ -41,8 +41,7 @@ class FortifyServiceProvider extends ServiceProvider
             return Limit::perMinute(5)->by($email . $request->ip());
         });
         RateLimiter::for('two-factor', function (Request $request) {
-            return
-                Limit::perMinute(5)->by($request->session()->get('login.id'));
+            return Limit::perMinute(5)->by($request->session()->get('login.id'));
         });
         //login
         Fortify::loginView(function () {
@@ -58,7 +57,9 @@ class FortifyServiceProvider extends ServiceProvider
                 'request' => $request,
             ]);
         });
-        //logout
+        /**
+         * logout
+         */
         $this->app->singleton(\Laravel\Fortify\Contracts\LogoutResponse::class, \App\Http\Responses\LogoutResponse::class);
     }
 }

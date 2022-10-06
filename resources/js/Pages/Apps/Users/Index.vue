@@ -41,18 +41,20 @@
                                 <td>{{ user.name }}</td>
                                 <td>{{ user.email }}</td>
                                 <td>
-                                    <span v-for="(role,
-                                    index) in user.roles" :key="index"
+                                    <span v-for="(role, index) in user.roles" :key="index"
                                         class="badge badge-primary shadow border-0 ms-2">
                                         {{ role.name }}
                                     </span>
                                 </td>
                                 <td class="text-center">
-                                    <Link href="#" v-if="hasAnyPermission(['user.edit'])"
+                                    <Link :href="`/apps/users/${user.id}/edit`" v-if="hasAnyPermission(['user.edit'])"
                                         class="btn btn-success btn-sm me-2"><i class="fa fa-pencil-alt me-1"></i> EDIT
                                     </Link>
-                                    <button v-if="hasAnyPermission(['user.delete'])" class="btn btn-danger btn-sm"><i
-                                            class="fa fa-trash"></i> DELETE</button>
+
+
+                                    <button @click.prevent="destroy(user.id)" v-if="hasAnyPermission(['user.delete'])"
+                                        class="btn btn-danger btn-sm"><i class="fa fa-trash"></i> DELETE
+                                    </button>
                                 </td>
                             </tr>
                         </tbody>
@@ -74,6 +76,9 @@ import { Head, Link } from '@inertiajs/inertia-vue3';
 
 //import ref from vue
 import { ref } from 'vue';
+
+//import sweet alert2
+import Swal from 'sweetalert2';
 
 //import inertia adapter
 import { Inertia } from '@inertiajs/inertia';
@@ -103,10 +108,35 @@ export default {
                 q: search.value,
             });
         }
+        //method destroy
+        const destroy = (id) => {
+            Swal.fire({
+                title: 'Are you sure?',
+                text: "You won't be able to revert this!",
+                icon: 'warning',
+                showCancelButton: true,
+                confirmButtonColor: '#3085d6',
+                cancelButtonColor: '#d33',
+                confirmButtonText: 'Yes, delete it!'
+            })
+                .then((result) => {
+                    if (result.isConfirmed) {
+                        Inertia.delete(`/apps/users/${id}`);
+                        Swal.fire({
+                            title: 'Deleted!',
+                            text: 'User deleted successfully.',
+                            icon: 'success',
+                            timer: 2000,
+                            showConfirmButton: false,
+                        });
+                    }
+                })
+        }
         //return
         return {
             search,
             handleSearch,
+            destroy
         }
     }
 

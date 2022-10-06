@@ -38,6 +38,7 @@ class UserController extends Controller
         $roles = Role::all();
         //return inertia
         // dd($roles);
+        //TODO: create a new resource by type role
         return Inertia::render('Apps/Users/Create', [
             'roles' => $roles
         ]);
@@ -84,6 +85,7 @@ class UserController extends Controller
         //get roles
         $roles = Role::all();
         //return inertia
+        // dd($user);
         return Inertia::render('Apps/Users/Edit', [
             'user' => $user,
             'roles' => $roles

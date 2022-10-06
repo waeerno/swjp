@@ -120,9 +120,15 @@
                     </li>
 
                     <li class="nav-item">
-                        <Link class="nav-link d-flex align-items-center" href="/apps/dashboard">
+                        <Link class="nav-link d-flex align-items-center" href="/logout" method="POST" role="button">
                         <i data-feather="power"></i>
                         <span>Logout</span>
+                        </Link>
+                    </li>
+
+                    <li class="nav-item">
+                        <Link href="/logout" method="POST" as="button" class="dropdown-item" role="button">
+                        Logout
                         </Link>
                     </li>
 
@@ -130,17 +136,22 @@
             </div>
         </div>
     </div>
-
-
 </template>
 
 <script>
 //import Link
 import { Link } from '@inertiajs/inertia-vue3';
-
 export default {
     components: {
-        Link,
+        Link
+    },
+    props: {
+        auth: Object
     }
+
 }
 </script>
+
+<style>
+
+</style>

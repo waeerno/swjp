@@ -42,7 +42,8 @@
                                     href="app-email.html"><i class="mr-1" data-feather="mail"></i><span
                                         class="align-middle">Email</span></a><a class="dropdown-item"
                                     href="app-calendar.html"><i class="mr-1" data-feather="calendar"></i><span
-                                        class="align-middle">Calendar</span></a></div>
+                                        class="align-middle">Calendar</span></a>
+                            </div>
                         </div>
                     </div>
                 </div>
