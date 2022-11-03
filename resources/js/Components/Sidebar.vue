@@ -23,33 +23,40 @@
 
                     <li :class="{ 'active': $page.url.startsWith('/apps/dashboard') }" class="nav-item">
                         <Link class="nav-link d-flex align-items-center" href="/apps/dashboard">
-                        <i data-feather="home"></i>
+                        <!-- <i data-feather="home"></i> -->
                         <span>Dashboard</span>
+                        </Link>
+                    </li>
+
+                    <li :class="{ 'active': $page.url.startsWith('/apps/user') }" data-menu="">
+                        <Link class="dropdown-item d-flex align-items-center" href="/apps/users">
+                        <!-- <i data-feather='circle'></i> -->
+                        <span>User</span>
                         </Link>
                     </li>
 
                     <li class="dropdown nav-item" data-menu="dropdown">
                         <a class="dropdown-toggle nav-link d-flex align-items-center" href="#" data-toggle="dropdown">
-                            <i data-feather='database'></i>
+                            <!-- <i data-feather='database'></i> -->
                             <span data-i18n="Apps">Data Master</span>
                         </a>
                         <ul class="dropdown-menu">
                             <li :class="{ 'active': $page.url.startsWith('/apps/user') }" data-menu="">
                                 <Link class="dropdown-item d-flex align-items-center" href="/apps/users">
-                                <i data-feather='circle'></i>
+                                <!-- <i data-feather='circle'></i> -->
                                 <span>User</span>
                                 </Link>
                             </li>
                             <li :class="{ 'active': $page.url.startsWith('/apps/wilayah') }" data-menu="">
                                 <Link class="dropdown-item d-flex align-items-center" href="/apps/wilayah">
-                                <i data-feather='circle'></i>
+                                <!-- <i data-feather='circle'></i> -->
                                 <span>Wiyayah</span>
                                 </Link>
                             </li>
                         </ul>
                     </li>
 
-                    <li class="dropdown nav-item" data-menu="dropdown">
+                    <!-- <li class="dropdown nav-item" data-menu="dropdown">
                         <a class="dropdown-toggle nav-link d-flex align-items-center" href="#" data-toggle="dropdown">
                             <i data-feather="package"></i>
                             <span data-i18n="Apps">Paket dan Penawaran</span>
@@ -89,48 +96,59 @@
                                 </Link>
                             </li>
                         </ul>
+                    </li> -->
+                    <li :class="{ 'active': $page.url.startsWith('/apps/roles') }" data-menu="">
+                        <Link class="dropdown-item d-flex align-items-center" href="/apps/roles">
+                        <!-- <i data-feather='circle'></i> -->
+                        <span>Role</span>
+                        </Link>
                     </li>
-
+                    <li :class="{ 'active': $page.url.startsWith('/apps/permissions') }" data-menu="">
+                        <Link class="dropdown-item d-flex align-items-center" href="/apps/permissions">
+                        <!-- <i data-feather='circle'></i> -->
+                        <span>Permissions</span>
+                        </Link>
+                    </li>
                     <li class="dropdown nav-item" data-menu="dropdown">
                         <a class="dropdown-toggle nav-link d-flex align-items-center" href="#" data-toggle="dropdown">
-                            <i data-feather='share-2'></i>
+                            <!-- <i data-feather='share-2'></i> -->
                             <span data-i18n="Apps">Authorize</span>
                         </a>
                         <ul class="dropdown-menu">
                             <li :class="{ 'active': $page.url.startsWith('/apps/roles') }" data-menu="">
                                 <Link class="dropdown-item d-flex align-items-center" href="/apps/roles">
-                                <i data-feather='circle'></i>
+                                <!-- <i data-feather='circle'></i> -->
                                 <span>Role</span>
                                 </Link>
                             </li>
                             <li :class="{ 'active': $page.url.startsWith('/apps/permissions') }" data-menu="">
                                 <Link class="dropdown-item d-flex align-items-center" href="/apps/permissions">
-                                <i data-feather='circle'></i>
+                                <!-- <i data-feather='circle'></i> -->
                                 <span>Permissions</span>
                                 </Link>
                             </li>
                         </ul>
                     </li>
 
-                    <li :class="{ 'active': $page.url.startsWith('/apps/profile') }" class="nav-item">
+                    <!-- <li :class="{ 'active': $page.url.startsWith('/apps/profile') }" class="nav-item">
                         <Link class="nav-link d-flex align-items-center" href="/apps/dashboard">
                         <i data-feather="user"></i>
                         <span>Profile</span>
                         </Link>
-                    </li>
+                    </li> -->
 
                     <li class="nav-item">
                         <Link class="nav-link d-flex align-items-center" href="/logout" method="POST" role="button">
-                        <i data-feather="power"></i>
+                        <!-- <i data-feather="power"></i> -->
                         <span>Logout</span>
                         </Link>
                     </li>
 
-                    <li class="nav-item">
+                    <!-- <li class="nav-item">
                         <Link href="/logout" method="POST" as="button" class="dropdown-item" role="button">
                         Logout
                         </Link>
-                    </li>
+                    </li> -->
 
                 </ul>
             </div>
