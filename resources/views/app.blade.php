@@ -47,7 +47,7 @@
     <!-- END: Custom CSS-->
 
     <script src="{{ asset('/admin/js/coreui.bundle.min.js') }}" defer></script>
-    <script src="{{ mix('/js/app.js') }}" defer></script>
+    @vite('resources/js/app.js')
 
 </head>
 <body class="horizontal-layout horizontal-menu navbar-floating footer-static  " data-open="hover" data-menu="horizontal-menu" data-col="">
