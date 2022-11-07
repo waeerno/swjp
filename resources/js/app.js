@@ -4,9 +4,21 @@ import { createApp, h } from "vue";
 import { createInertiaApp } from "@inertiajs/inertia-vue3";
 import { InertiaProgress } from "@inertiajs/progress";
 
+// Vuetify
+import 'vuetify/styles'
+import { createVuetify } from 'vuetify'
+import * as components from 'vuetify/components'
+import * as directives from 'vuetify/directives'
+
+
+const vuetify = createVuetify({
+    components,
+    directives,
+  })
+
 createInertiaApp({
     resolve: (name) => require(`./Pages/${name}`),
-    setup({ el, App, props, plugin }) {
+    setup({ el, App, props, plugin, vuetify }) {
         createApp({ render: () => h(App, props) })
             //set mixins
             .mixin({
@@ -26,6 +38,7 @@ createInertiaApp({
             })
 
             .use(plugin)
+            .use(vuetify)
             .mount(el);
     },
 });
